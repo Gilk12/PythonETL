@@ -10,7 +10,6 @@ users_data = pd.read_csv("csv/users.csv")
 users_gender_and_age_mask = (users_data['gender'] == 'female') & (users_data['age'] > 35)
 
 filtered_users_data = users_data[users_gender_and_age_mask]
-print(filtered_users_data)
 
 hotels_data = pd.read_csv("csv/hotels.csv")
 
